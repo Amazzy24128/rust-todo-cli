@@ -1,1 +1,30 @@
+# Rust 编译产物
+/target/
+**/*.rs.bk
+*. pdb
 
+# Cargo 锁文件（库项目可以忽略，但 CLI 应用建议保留）
+# Cargo.lock
+
+# 调试文件
+debug/
+*. dSYM/
+
+# IDE 和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 项目特定文件
+todos.json          # 运行时生成的数据文件
+*. json. bak          # 备份文件
+
+# 测试产物
+*. profraw
+*.profdata
+
+# 系统文件
+Thumbs.db
